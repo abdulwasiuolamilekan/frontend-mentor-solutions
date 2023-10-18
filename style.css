@@ -1,42 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,700&family=Outfit:wght@400;700&display=swap');
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body {
-    background-color: lightgray;
-    font-family: 'Outfit', sans-serif;
-    text-align: center;
-    font-size: 15px;
+    font-family: 'montserret', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .container {
-    max-width: 360px;
-    margin: 0 auto;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 15px;
-    margin-top: 15px;
+    margin: 35px auto;
+    padding: 0 35px;
 }
 
 .card {
-    padding: 15px;
-    text-align: center;
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+
 }
 
-.card img {
-    width: 100%;
-    border-radius: 12px;
+.img img {
+    max-width: 100%;
+    display: inherit;
 }
 
 .text {
-    padding: 22px 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-h2 {
-    color: hsl(218, 44%, 22%);
-    padding-bottom: 15px;
+h5 {
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 5px;
+    font-size: 12px;
+    font-weight: 500px;
+}
+
+h1 {
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+    font-size: 34px;
+    line-height: 30px;
 }
 
 p {
-    color: hsl(220, 15%, 55%);
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    line-height: 25px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.current.price {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 35px;
+}
+
+.old.price {
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    padding-left: 15px;
+}
+
+.button {
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 12px;
+    padding: 14px 0;
+    color: white;
+    font-size: 14px;
+    font-weight: 700px;
+    cursor: pointer;
+    transition: background-color .4s ease;
+}
+
+.button:hover {
+    background-color: hsl(158, 43%, 16%);
+}
+
+.button img {
+    padding-right: 8px;
 }
